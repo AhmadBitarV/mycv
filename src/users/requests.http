@@ -1,0 +1,31 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "qwe@nemail.som",
+    "password": "asdasdasd"
+}
+
+### Find by id query
+GET http://localhost:3000/auth/15
+Content-Type: application/json
+
+
+### Find by query email
+GET http://localhost:3000/auth?email=qwe@nemail.som
+Content-Type: application/json
+
+
+
+### Delete a user by ID
+DELETE http://localhost:3000/auth/5
+Content-Type: application/json
+
+### Update a user
+PATCH http://localhost:3000/auth/5
+Content-Type: application/json
+
+{
+    "email": "aaa@aaaa.som",
+    "password": "somthing"
+}
