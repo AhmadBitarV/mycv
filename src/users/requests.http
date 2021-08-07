@@ -1,9 +1,46 @@
+// create a new user
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "qwe@nemail.som",
-    "password": "asdasdasd"
+    "email": "AhmedBitar@gmail.com",
+    "password": "somethinghere"
+}
+
+### sign in as an existing user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "AhmedBitar@gmail.com",
+    "password": "somethinghere"
+}
+
+### Sign out
+POST http://localhost:3000/auth/sign-out
+Content-Type: application/json
+
+{
+    "email": "AhmedBitar@gmail.com",
+    "password": "somethinghere"
+}
+
+### Get currently sign in user
+GET  http://localhost:3000/auth/who-am-i
+Content-Type: application/json
+
+{
+    "email": "AhmedBitar@gmail.com",
+    "password": "somethinghere"
+}
+
+### Sign in
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "Ahmed@gmail.com",
+    "password": "somethinghere"
 }
 
 ### Find by id query
